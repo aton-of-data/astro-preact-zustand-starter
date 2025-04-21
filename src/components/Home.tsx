@@ -1,21 +1,21 @@
-import { useTheme } from '../store/useTheme';
-import { t, locale } from '../i18n';
-import ThemeEditor from './ThemeEditor';
-import LangSwitcher from './LangSwitcher';
-import { useEffect } from 'preact/hooks';
+import { useTheme } from "../store/useTheme";
+import { t, locale } from "../i18n";
+import ThemeEditor from "./ThemeEditor";
+import LangSwitcher from "./LangSwitcher";
+import { useEffect } from "preact/hooks";
 
-export default function LandingContent() {
+export default function Home() {
   const { theme } = useTheme();
 
   /* Map zustand theme → CSS variables */
   useEffect(() => {
     const root = document.documentElement.style;
-    root.setProperty('--color-primary', theme.primary);
-    root.setProperty('--color-secondary', theme.secondary);
-    root.setProperty('--color-bg', theme.background);
-    root.setProperty('--color-text', theme.text);
-    root.setProperty('--radius-base', theme.radius);
-    root.setProperty('--spacing-base', theme.spacing);
+    root.setProperty("--color-primary", theme.primary);
+    root.setProperty("--color-secondary", theme.secondary);
+    root.setProperty("--color-bg", theme.background);
+    root.setProperty("--color-text", theme.text);
+    root.setProperty("--radius-base", theme.radius);
+    root.setProperty("--spacing-base", theme.spacing);
   }, [theme]);
 
   return (
@@ -23,13 +23,13 @@ export default function LandingContent() {
       {/* HERO */}
       <section class="hero">
         <h1 class="hero__title">
-          {t('hero.title')}
+          {t("hero.title")}
           <br />
-          <small>{t('hero.subtitle')}</small>
+          <small>{t("hero.subtitle")}</small>
         </h1>
-        <p class="hero__subtitle">{t('hero.tagline')}</p>
+        <p class="hero__subtitle">{t("hero.tagline")}</p>
         <a href="#features" class="button">
-          {t('cta.seeWhy')}
+          {t("cta.seeWhy")}
         </a>
       </section>
 
@@ -44,11 +44,11 @@ export default function LandingContent() {
       {/* floating panel */}
       <div
         style={{
-          position: 'fixed',
-          top: '1rem',
-          right: '1rem',
+          position: "fixed",
+          top: "1rem",
+          right: "1rem",
           width: 260,
-          zIndex: 9999
+          zIndex: 9999,
         }}
       >
         <LangSwitcher />

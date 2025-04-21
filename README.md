@@ -54,7 +54,6 @@
   ├── astro.config.mjs
   ├── vite.config.ts
   ├── vitest.config.ts
-  ├── .eslintrc.cjs / .prettierrc
   ├── .jscramblerrc         → Obfuscation recipe (prod only)
   └── package.json
   ```
@@ -179,9 +178,8 @@
   | `dev`                | Astro dev server + instant HMR                                       |
   | `build`              | `astro build` → Brotli/Gzip → **(opt.)** `jscrambler`                |
   | `preview`            | Serve built site locally                                             |
-  | `test`, `test:watch` | Run Vitest once or in watch mode                                     |
-  | `lint`, `format`     | ESLint / Prettier                                                    |
-  | **Git hooks**        | `pre‑commit` → lint + tests · `commit‑msg` → commitlint              |
+  | `test`               | Run Vitest once or in watch mode                                     |
+  | **Git hooks**        | `pre‑commit` →  tests · `commit‑msg` → commitlint              |
 
 ---
 

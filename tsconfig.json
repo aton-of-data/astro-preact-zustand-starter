@@ -4,13 +4,8 @@
     "moduleResolution": "bundler",
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
-    "types": ["astro/client","vite/client"]
+    "types": ["astro/client", "vite/client"]
   },
 
-  "include": [
-    "src",
-    "astro.config.*",
-    "vite.config.*",
-    "vitest.config.*"
-  ]
+  "include": ["src", "astro.config.*", "vite.config.*"]
 }

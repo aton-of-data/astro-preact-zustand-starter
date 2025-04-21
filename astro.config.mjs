@@ -1,4 +1,3 @@
-// astro.config.mjs
 import { defineConfig } from 'astro/config';
 import preact from '@astrojs/preact';
 import { imagetools } from 'vite-imagetools';
@@ -16,7 +15,7 @@ export default defineConfig({
       }
     },
     ssr: {
-      noExternal: ['zustand']   // mantém o ajuste para o alias funcionar no SSR
+      noExternal: ['zustand']
     }
   }
 });
