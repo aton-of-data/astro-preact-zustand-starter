@@ -208,7 +208,7 @@
   ## ⚡ Quick Start
 
   ```bash
-  git clone https://github.com/YOUR-ORG/astro-preact-zustand-starter
+  git clone https://github.com/aton-of-data/astro-preact-zustand-starter
   cd astro-preact-zustand-starter
   npm i          # or: yarn
   npm run dev    # or: yarn dev
