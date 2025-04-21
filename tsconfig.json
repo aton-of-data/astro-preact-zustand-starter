@@ -1,5 +1,16 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"]
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+    "types": ["astro/client","vite/client"]
+  },
+
+  "include": [
+    "src",
+    "astro.config.*",
+    "vite.config.*",
+    "vitest.config.*"
+  ]
 }

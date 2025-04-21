@@ -1,0 +1,62 @@
+:root {
+  --color-primary: #4f46e5;
+  --color-secondary: #06b6d4;
+  --color-bg: #ffffff;
+  --color-text: #111827;
+  --radius-base: 0.5rem;
+  --spacing-base: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* BEM — block: hero */
+.hero {
+  background: var(--color-bg);
+  color: var(--color-text);
+  padding: calc(var(--spacing-base) * 4) var(--spacing-base);
+  text-align: center;
+}
+.hero__title {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-base);
+}
+.hero__subtitle {
+  font-size: 1.25rem;
+  color: var(--color-secondary);
+}
+
+/* BEM — block: button */
+.button {
+  display: inline-block;
+  padding: calc(var(--spacing-base) * 0.75) calc(var(--spacing-base) * 1.5);
+  border-radius: var(--radius-base);
+  background: var(--color-primary);
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.button:hover {
+  background: var(--color-secondary);
+}
+
+/* BEM — block: features */
+.features {
+  max-width: 960px;
+  margin: calc(var(--spacing-base) * 4) auto;
+  display: grid;
+  gap: calc(var(--spacing-base) * 2);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.features__item {
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius-base);
+  padding: calc(var(--spacing-base) * 1.5);
+  background: var(--color-bg);
+}
+.features__item-title {
+  font-weight: 600;
+  margin-bottom: calc(var(--spacing-base) * 0.5);
+  color: var(--color-primary);
+}
+.features__item-text {
+  font-size: 0.95rem;
+}

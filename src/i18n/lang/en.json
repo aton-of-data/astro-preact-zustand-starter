@@ -1,0 +1,27 @@
+{
+  "page": { "title": "Themed Landing" },
+  "hero": {
+    "title": "Astro + Preact + Zustand Boilerplate",
+    "subtitle": "Boilerplate Astro + Preact + Zustand",
+    "tagline": "Tiny bundle · Zero client‑side overhead"
+  },
+  "cta": { "seeWhy": "See why" },
+  "features": {
+    "performance": {
+      "title": "Performance",
+      "text": "Astro ships 0 kB of JS by default; Preact runtime only loads in islands (<30 kB gzip first load)."
+    },
+    "batteries": {
+      "title": "Batteries‑included",
+      "text": "ESLint, Prettier, Vitest, Husky, Commitlint, Rosetta i18n, Zustand state, image optimisation & more configured out of the box."
+    },
+    "theme": {
+      "title": "Live Theme",
+      "text": "Update colors, radius and spacing in real‑time via Zustand store + CSS variables."
+    },
+    "security": {
+      "title": "Secure",
+      "text": "Optional Jscrambler integration to obfuscate production JS bundles."
+    }
+  }
+}

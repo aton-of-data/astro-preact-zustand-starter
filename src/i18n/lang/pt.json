@@ -1,0 +1,27 @@
+{
+  "page": { "title": "Landing Personalizada" },
+  "hero": {
+    "title": "Boilerplate Astro + Preact + Zustand",
+    "subtitle": "Astro + Preact + Zustand Boilerplate",
+    "tagline": "Bundle minúsculo · Zero JS desnecessário"
+  },
+  "cta": { "seeWhy": "Veja por quê" },
+  "features": {
+    "performance": {
+      "title": "Desempenho",
+      "text": "O Astro envia 0 kB de JS por padrão; o runtime do Preact carrega apenas em ilhas (primeira carga <30 kB gzip)."
+    },
+    "batteries": {
+      "title": "Completíssimo",
+      "text": "ESLint, Prettier, Vitest, Husky, Commitlint, i18n Rosetta, estado Zustand, otimização de imagens e mais já configurados."
+    },
+    "theme": {
+      "title": "Tema ao vivo",
+      "text": "Atualize cores, raio e espaçamento em tempo real usando Zustand e variáveis CSS."
+    },
+    "security": {
+      "title": "Seguro",
+      "text": "Integração opcional com Jscrambler para ofuscar o JS de produção."
+    }
+  }
+}

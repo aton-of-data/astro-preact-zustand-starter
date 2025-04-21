@@ -1,5 +1,22 @@
-// @ts-check
+// astro.config.mjs
 import { defineConfig } from 'astro/config';
+import preact from '@astrojs/preact';
+import { imagetools } from 'vite-imagetools';
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  integrations: [preact()],
+  vite: {
+    plugins: [imagetools()],
+    resolve: {
+      alias: {
+        react: 'preact/compat',
+        'react-dom': 'preact/compat',
+        'react-dom/test-utils': 'preact/test-utils',
+        'react/jsx-runtime': 'preact/jsx-runtime'
+      }
+    },
+    ssr: {
+      noExternal: ['zustand']   // mantém o ajuste para o alias funcionar no SSR
+    }
+  }
+});

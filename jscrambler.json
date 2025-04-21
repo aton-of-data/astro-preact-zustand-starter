@@ -1,0 +1,25 @@
+{
+  "keys": {
+    "accessKey": "YOUR_ACCESS_KEY",
+    "secretKey": "YOUR_SECRET_KEY"
+  },
+  "applicationId": "YOUR_APP_ID",
+  "filesSrc": ["dist/assets/**/*.js"],
+  "filesDest": "dist",
+  "params": [
+    { "name": "identifierReordering" },
+    { "name": "variableMasking" },
+    {
+      "name": "stringConcealing",
+      "options": { "encoding": ["base62"], "rotate": true }
+    },
+    { "name": "propertyRenaming", "options": { "mode": "safe" } },
+    { "name": "deltaInjection", "options": { "freq": 0.15 } }
+  ],
+  "exclusions": ["**/*.br", "**/*.gz", "**/*.map"],
+  "languageSpecifications": {
+    "esVersion": 2018
+  },
+  "useRecommendedOrder": true,
+  "areSubscribersNotificationsEnabled": false
+}
