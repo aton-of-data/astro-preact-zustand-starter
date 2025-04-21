@@ -187,11 +187,8 @@
 
   ## 🔐 Jscrambler (optional)
 
-  ```mermaid
-  pie showData
-    title Bundle size increase (gzip)
-    "Original" : 16kb
-    "After Scramble (+~18%)"
+  ```text
+  npm run build:secure
   ```
   ---
 
