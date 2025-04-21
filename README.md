@@ -12,15 +12,15 @@
 
   ## 📦 Production Stats (example)
 
-  ```text
-  Arquivo | Raw (kB) | Gzip (kB)
-  dist/_astro/pt.CvA52SRl.js | 0.86 | 0.54
-  dist/_astro/client.DRhvI7f3.js | 1.19 | 0.70
-  dist/_astro/signals.module.DiwRiHzE.js | 10.34 | 3.92
-  dist/_astro/preload-helper.BigyefsC.js | 12.52 | 5.25
-  dist/_astro/Home.BdT2eaEd.js | 14.79 | 6.28
-  TOTAL (first load) | 39.70 | 16.69
-  ```
+| Arquivo                                  | Raw (kB) | Gzip (kB) |
+|------------------------------------------|---------:|----------:|
+| `dist/_astro/pt.CvA52SRl.js`             |     0.86 |      0.54 |
+| `dist/_astro/client.DRhvI7f3.js`         |     1.19 |      0.70 |
+| `dist/_astro/signals.module.DiwRiHzE.js` |    10.34 |      3.92 |
+| `dist/_astro/preload-helper.BigyefsC.js` |    12.52 |      5.25 |
+| `dist/_astro/Home.BdT2eaEd.js`           |    14.79 |      6.28 |
+| **TOTAL (first load)**                   | **39.70**| **16.69** |
+
 
   ---
 
@@ -185,11 +185,8 @@
 
   ## 🔐 Jscrambler (optional)
 
-  ```mermaid
-  pie showData
-    title Bundle size increase (gzip)
-    "Original" : 16kb
-    "After Scramble (+~18%)"
+  ```text
+  npm run build:secure
   ```
   ---
 
@@ -206,7 +203,7 @@
   ## ⚡ Quick Start
 
   ```bash
-  git clone https://github.com/YOUR-ORG/astro-preact-zustand-starter
+  git clone https://github.com/aton-of-data/astro-preact-zustand-starter
   cd astro-preact-zustand-starter
   npm i          # or: yarn
   npm run dev    # or: yarn dev
