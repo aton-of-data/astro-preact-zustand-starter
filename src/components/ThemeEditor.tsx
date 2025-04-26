@@ -10,7 +10,7 @@ export default function ThemeEditor() {
         margin: "1rem 0",
         width: 260,
         padding: 12,
-        background: "#fff",
+        backgroundColor: "var(--color-bg)",
         border: "1px solid #dadce0",
         borderRadius: 8,
         fontSize: 14,
