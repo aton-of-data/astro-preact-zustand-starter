@@ -1,5 +1,6 @@
 ---
-import Home from "../components/Home.tsx";
+import Home from "../components/Home";
+import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/theme.css";
 ---
 
@@ -10,6 +11,8 @@ import "../styles/theme.css";
     <title>Landing</title>
   </head>
   <body>
-    <Home client:visible />
+    <BaseLayout>
+      <Home client:visible />
+    </BaseLayout>
   </body>
 </html>
