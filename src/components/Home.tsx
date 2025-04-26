@@ -1,23 +1,8 @@
-import { useTheme } from "../store/useTheme";
 import { t, locale } from "../i18n";
 import ThemeEditor from "./ThemeEditor";
 import LangSwitcher from "./LangSwitcher";
-import { useEffect } from "preact/hooks";
 
 export default function Home() {
-  const { theme } = useTheme();
-
-  /* Map zustand theme → CSS variables */
-  useEffect(() => {
-    const root = document.documentElement.style;
-    root.setProperty("--color-primary", theme.primary);
-    root.setProperty("--color-secondary", theme.secondary);
-    root.setProperty("--color-bg", theme.background);
-    root.setProperty("--color-text", theme.text);
-    root.setProperty("--radius-base", theme.radius);
-    root.setProperty("--spacing-base", theme.spacing);
-  }, [theme]);
-
   return (
     <>
       {/* HERO */}

@@ -40,15 +40,4 @@ describe("Home", () => {
     expect(screen.getByText("hero.tagline")).toBeTruthy();
     expect(screen.getByText("cta.seeWhy")).toBeTruthy();
   });
-
-  it("sets CSS variables based on theme", () => {
-    render(<Home />);
-    const style = document.documentElement.style;
-    expect(style.getPropertyValue("--color-primary")).toBe("red");
-    expect(style.getPropertyValue("--color-secondary")).toBe("green");
-    expect(style.getPropertyValue("--color-bg")).toBe("white");
-    expect(style.getPropertyValue("--color-text")).toBe("black");
-    expect(style.getPropertyValue("--radius-base")).toBe("4px");
-    expect(style.getPropertyValue("--spacing-base")).toBe("8px");
-  });
 });
