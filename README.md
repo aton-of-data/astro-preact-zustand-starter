@@ -28,7 +28,7 @@
 
   | Area            | What you get                                            | Why it matters                                                                      |
   |-----------------|---------------------------------------------------------|-------------------------------------------------------------------------------------|
-  | **UI & State**  | `preact`, `@astrojs/preact`, `zustand`                  | React‑compatible runtime (~9 kB) + tiny, tree‑shakable global state (~3 kB)          |
+  | **UI & State**  | `preact`, `@astrojs/preact`, `zustand` with theme customization out of the box | React‑compatible runtime (~9 kB) + tiny, tree‑shakable global state (~3 kB)          |
   | **i18n**        | **Rosetta** (+ `@preact/signals`)                       | Ultra‑small (~0.3 kB) runtime, reactive locale switch, JSONs are lazy‑loaded per language |
   | **Tooling**     | **Astro 5 + Vite 5**                                    | Islands architecture + lightning‑fast ESBuild bundling                              |
   | **Type Safety** | TypeScript (strict)                                     | Safer code, autocomplete, zero runtime cost                                         |

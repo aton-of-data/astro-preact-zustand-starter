@@ -1,21 +1,31 @@
-import { defineConfig } from 'astro/config';
-import preact from '@astrojs/preact';
-import { imagetools } from 'vite-imagetools';
+import { defineConfig } from "astro/config";
+import preact from "@astrojs/preact";
+import { imagetools } from "vite-imagetools";
+import vercel from "@astrojs/vercel/static";
 
 export default defineConfig({
+  /**
+   * for vercel deploy only
+   */
+  output: "static",
+  adapter: vercel(),
+  /**
+   * end
+   */
+
   integrations: [preact()],
   vite: {
     plugins: [imagetools()],
     resolve: {
       alias: {
-        react: 'preact/compat',
-        'react-dom': 'preact/compat',
-        'react-dom/test-utils': 'preact/test-utils',
-        'react/jsx-runtime': 'preact/jsx-runtime'
-      }
+        react: "preact/compat",
+        "react-dom": "preact/compat",
+        "react-dom/test-utils": "preact/test-utils",
+        "react/jsx-runtime": "preact/jsx-runtime",
+      },
     },
     ssr: {
-      noExternal: ['zustand']
-    }
-  }
+      noExternal: ["zustand"],
+    },
+  },
 });
