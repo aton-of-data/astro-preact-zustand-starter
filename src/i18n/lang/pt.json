@@ -23,5 +23,40 @@
       "title": "Seguro",
       "text": "Integração opcional com Jscrambler para ofuscar o JS de produção."
     }
+  },
+  "island": {
+    "title": "Astro Islands",
+    "what": {
+      "title": "O que é uma Island?",
+      "description": "Em Astro, uma Island é um componente interativo isolado dentro de uma página HTML estática. Pode ser uma Client Island (hidratada no navegador) ou Server Island (conteúdo dinâmico no servidor)."
+    },
+    "how": {
+      "title": "Como Funciona",
+      "items": [
+        "🌊 A maior parte da página é HTML estático puro.",
+        "🛫 Islands são hidratadas separadamente.",
+        "🔀 Pode-se misturar frameworks diferentes na mesma página.",
+        "🛡️ Cada Island é isolada, mas pode compartilhar estado."
+      ]
+    },
+    "directives": {
+      "title": "Diretivas Client",
+      "description": "O Astro permite controlar quando carregar uma Island usando diretivas:",
+      "items": [
+        "`client:load` — Carrega logo após a página carregar.",
+        "`client:visible` — Carrega quando entra na viewport.",
+        "`client:idle` — Carrega quando o navegador está ocioso."
+      ]
+    },
+    "benefits": {
+      "title": "Por que usar Islands?",
+      "items": [
+        "⚡ Carregamento ultra rápido: HTML/CSS primeiro, JS apenas quando necessário.",
+        "🚀 Hidratação paralela dos componentes.",
+        "🎯 Controle fino de performance e UX.",
+        "🛠️ Migração ou combinação de múltiplos frameworks fácil."
+      ]
+    },
+    "tip": "Dica: use Islands apenas para as partes interativas, mantendo o resto estático e ultra rápido."
   }
 }

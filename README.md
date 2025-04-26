@@ -6,24 +6,27 @@
   [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
   > **Zero‑config DX, microscopic production bundle**  
-  > &lt; 17kB gzip / &lt;
+  > &lt; 19kB gzip / &lt;
 
   ---
 
   ## 📦 Production Stats (example)
 
-| Arquivo                                      | Raw (kB) | Gzip (kB) |
-|----------------------------------------------|---------:|----------:|
+| Arquivo                                        | Raw (kB) | Gzip (kB) |
+|------------------------------------------------|---------:|----------:|
 | `dist/client/_astro/ThemeProvider.BMPBm_jg.js` |     0.49 |      0.28 |
-| `dist/client/_astro/pt.CvA52SRl.js`             |     0.86 |      0.54 |
-| `dist/client/_astro/preload-helper.BlTxHScW.js` |     1.11 |      0.65 |
-| `dist/client/_astro/client.B4trDnle.js`         |     1.25 |      0.73 |
-| `dist/client/_astro/hooks.module.B8-SMkWr.js`   |     3.44 |      1.47 |
-| `dist/client/_astro/Home.CozpukfK.js`           |     4.61 |      2.22 |
-| `dist/client/_astro/signals.module.BSVLIGyl.js` |     6.84 |      2.61 |
-| `dist/client/_astro/useTheme.BeygA-Mp.js`       |    10.08 |      4.27 |
-| `dist/client/_astro/preact.module.CzIF3XV7.js`  |    11.41 |      4.74 |
-| **TOTAL (first load)**                         | **40.09**| **17.51** |
+| `dist/client/_astro/preload-helper.BlTxHScW.js`|     1.11 |      0.65 |
+| `dist/client/_astro/client.B4trDnle.js`        |     1.25 |      0.73 |
+| `dist/client/_astro/pt.DtS1SsXA.js`            |     2.13 |      1.13 |
+| `dist/client/_astro/Hero.C1aiWVeB.js`          |     2.25 |      0.98 |
+| `dist/client/_astro/Island.q3Q-Zdr5.js`        |     2.26 |      0.65 |
+| `dist/client/_astro/hooks.module.B8-SMkWr.js`  |     3.44 |      1.47 |
+| `dist/client/_astro/jsxRuntime.module.DC-uX_Hu.js` |  3.72 |      2.00 |
+| `dist/client/_astro/signals.module.BSVLIGyl.js`|     6.84 |      2.61 |
+| `dist/client/_astro/useTheme.BeygA-Mp.js`      |    10.08 |      4.27 |
+| `dist/client/_astro/preact.module.CzIF3XV7.js` |    11.41 |      4.74 |
+| **TOTAL (first load)**                        | **44.58**| **19.51** |
+
 
   ---
 

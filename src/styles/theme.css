@@ -44,8 +44,9 @@
   margin: calc(var(--spacing-base) * 4) auto;
   display: grid;
   gap: calc(var(--spacing-base) * 2);
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
+
 .features__item {
   border: 1px solid #e5e7eb;
   border-radius: var(--radius-base);

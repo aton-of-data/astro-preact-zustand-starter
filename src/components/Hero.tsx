@@ -2,7 +2,7 @@ import { t, locale } from "../i18n";
 import ThemeEditor from "./ThemeEditor";
 import LangSwitcher from "./LangSwitcher";
 
-export default function Home() {
+export default function Hero() {
   return (
     <>
       {/* HERO */}

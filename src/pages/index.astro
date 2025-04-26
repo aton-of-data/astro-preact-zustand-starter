@@ -1,9 +1,11 @@
 ---
-import Home from "../components/Home";
+import Hero from "../components/Hero";
+import Island from "../components/Island";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/theme.css";
 ---
 
 <BaseLayout>
-  <Home client:visible />
+  <Hero client:visible />
+  <Island client:visible />
 </BaseLayout>

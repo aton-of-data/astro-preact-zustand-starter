@@ -1,7 +1,7 @@
 import { h } from "preact";
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { render, screen } from "@testing-library/preact";
-import Home from "./Home";
+import Hero from "./Hero";
 
 vi.mock("../store/useTheme", () => ({
   useTheme: () => ({
@@ -28,13 +28,13 @@ vi.mock("./LangSwitcher", () => ({
   default: () => <div data-testid="lang-switcher" />,
 }));
 
-describe("Home", () => {
+describe("Hero", () => {
   beforeEach(() => {
     document.documentElement.style.cssText = "";
   });
 
   it("renders hero section with translations", () => {
-    render(<Home />);
+    render(<Hero />);
     expect(screen.getByText("hero.title")).toBeTruthy();
     expect(screen.getByText("hero.subtitle")).toBeTruthy();
     expect(screen.getByText("hero.tagline")).toBeTruthy();
