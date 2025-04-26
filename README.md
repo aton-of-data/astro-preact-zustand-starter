@@ -1,4 +1,4 @@
-  # ⚡ Astro + Preact + Zustand Boilerplate
+  # ⚡ [Astro + Preact + Zustand Boilerplate](https://astro-preact-zustand-starter.vercel.app/)
 
   [![Node >= 18](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](https://nodejs.org)
   [![Astro 5](https://img.shields.io/badge/astro-5.x-fd1d7c)](https://astro.build)
