@@ -8,6 +8,10 @@
   > **Zero‑config DX, microscopic production bundle**  
   > &lt; 19kB gzip / &lt;
 
+
+![image](https://github.com/user-attachments/assets/7a1d6a48-b19e-453b-9946-3d13ce32e15a)
+
+
   ---
 
   ## 📦 Production Stats (example)
