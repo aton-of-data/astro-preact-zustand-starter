@@ -4,14 +4,8 @@ import { imagetools } from "vite-imagetools";
 import vercel from '@astrojs/vercel';
 
 export default defineConfig({
-  /**
-   * for vercel deploy only
-   */
   output: "server",
   adapter: vercel(),
-  /**
-   * end
-   */
 
   integrations: [preact()],
   vite: {
