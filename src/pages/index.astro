@@ -4,15 +4,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/theme.css";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Landing</title>
-  </head>
-  <body>
-    <BaseLayout>
-      <Home client:visible />
-    </BaseLayout>
-  </body>
-</html>
+<BaseLayout>
+  <Home client:visible />
+</BaseLayout>
