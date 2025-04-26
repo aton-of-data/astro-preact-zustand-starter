@@ -1,13 +1,13 @@
 import { defineConfig } from "astro/config";
 import preact from "@astrojs/preact";
 import { imagetools } from "vite-imagetools";
-import vercel from "@astrojs/vercel/static";
+import vercel from "@astrojs/vercel/serverless";
 
 export default defineConfig({
   /**
    * for vercel deploy only
    */
-  output: "static",
+  output: "server",
   adapter: vercel(),
   /**
    * end
