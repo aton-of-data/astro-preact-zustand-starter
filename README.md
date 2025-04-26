@@ -6,21 +6,24 @@
   [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
   > **Zero‑config DX, microscopic production bundle**  
-  > &lt; 16kB gzip / &lt;
+  > &lt; 17kB gzip / &lt;
 
   ---
 
   ## 📦 Production Stats (example)
 
-| Arquivo                                  | Raw (kB) | Gzip (kB) |
-|------------------------------------------|---------:|----------:|
-| `dist/_astro/pt.CvA52SRl.js`             |     0.86 |      0.54 |
-| `dist/_astro/client.DRhvI7f3.js`         |     1.19 |      0.70 |
-| `dist/_astro/signals.module.DiwRiHzE.js` |    10.34 |      3.92 |
-| `dist/_astro/preload-helper.BigyefsC.js` |    12.52 |      5.25 |
-| `dist/_astro/Home.BdT2eaEd.js`           |    14.79 |      6.28 |
-| **TOTAL (first load)**                   | **39.70**| **16.69** |
-
+| Arquivo                                      | Raw (kB) | Gzip (kB) |
+|----------------------------------------------|---------:|----------:|
+| `dist/client/_astro/ThemeProvider.BMPBm_jg.js` |     0.49 |      0.28 |
+| `dist/client/_astro/pt.CvA52SRl.js`             |     0.86 |      0.54 |
+| `dist/client/_astro/preload-helper.BlTxHScW.js` |     1.11 |      0.65 |
+| `dist/client/_astro/client.B4trDnle.js`         |     1.25 |      0.73 |
+| `dist/client/_astro/hooks.module.B8-SMkWr.js`   |     3.44 |      1.47 |
+| `dist/client/_astro/Home.CozpukfK.js`           |     4.61 |      2.22 |
+| `dist/client/_astro/signals.module.BSVLIGyl.js` |     6.84 |      2.61 |
+| `dist/client/_astro/useTheme.BeygA-Mp.js`       |    10.08 |      4.27 |
+| `dist/client/_astro/preact.module.CzIF3XV7.js`  |    11.41 |      4.74 |
+| **TOTAL (first load)**                         | **40.09**| **17.51** |
 
   ---
 
